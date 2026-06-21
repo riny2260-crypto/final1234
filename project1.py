@@ -125,4 +125,4 @@ def analyze_pdf_details(file_bytes):
         detected_courses.append("기타연수")
 
     # 3) 이수번호 추출
-    serial_match = re.search(r'(제\s*[\w\s-]+
+    serial_match = re.search(r'(제\s*[\w\s-]+(?:호|호\b))', full_text)
